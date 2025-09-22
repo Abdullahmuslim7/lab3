@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab 3 - HTML Tables and Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Student Data</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Student ID</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>abdullah muslim</td>
+        <td>451101609</td>
+        <td>aboodty86@gmail.com</td>
+      </tr>
+     
+    </tbody>
+  </table>
+
+  <hr>
+
+  <h2>Contact Form</h2>
+
+  <form action="/submit-form" method="post">
+    <table class="form-table">
+      <tr>
+        <td><label for="name">Full Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="message">Message:</label></td>
+        <td><textarea id="message" name="message" rows="4"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Send</button></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
